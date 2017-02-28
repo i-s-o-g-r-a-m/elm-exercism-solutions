@@ -6,6 +6,7 @@ import Maybe exposing (withDefault)
 -- I guess folks like the head::tail destructuring, but I'm gonna stick with this
 
 
+accumulate : (a -> a) -> List a -> List a
 accumulate f seq =
     case (List.head seq) of
         Just val ->
